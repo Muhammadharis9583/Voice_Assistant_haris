@@ -1,0 +1,129 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    background-color: rgba(226, 226, 226, 0.775);
+}
+a{
+    color: rgba(0, 0, 0, 0.474);
+    text-decoration: none;
+    display: inline-block;     
+    /* position: relative;     */
+    z-index: 1;     
+    padding: 2em 10em;     
+}
+a:hover{
+    color:black;
+}
+
+i{
+    pointer-events: none;
+}
+
+.nav-bar{
+    background-color: rgba(247, 247, 247, 0.665);
+}
+.fa-bars{
+    width: 50px;
+ 
+}
+.grid-item{
+    position: relative;
+    margin-bottom: 20px;
+
+}
+.grid-item:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.icon-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.flex-container{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+}
+.fa,.fas{
+    margin-top: 12px;
+}
+
+.container{
+    /* margin-top: 3rem; */
+    height: auto;
+}
+
+#g1{
+    background-color: rgb(44, 187, 68);
+
+    padding: 30px 50px 70px 70px;
+    border-radius: 10px;
+}
+
+#g2{
+    
+    background-color: rgb(118, 174, 216);
+   
+    padding: 30px 50px 70px 70px;
+    border-radius: 10px;
+}
+
+#g3{
+    /* grid-column: 7/9; */
+    background-color: rgba(223, 25, 25, 0.761);
+
+    padding: 30px 50px 70px 70px;
+    border-radius: 10px;
+}
+#g4{
+    background-color: rgb(181, 181, 181);
+  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px 50px 70px 70px;
+    border-radius: 10px;
+}
+#g5{
+    background-color: rgb(151, 15, 151);
+
+    padding: 30px 50px 70px 70px;
+    border-radius: 10px;
+}
+#g6{
+    background-color: rgb(73, 73, 73);
+
+    padding: 30px 50px 70px 70px;
+    border-radius: 10px;
+}
+#g7{
+    background-color: rgb(230, 230, 24);
+    
+    padding: 30px 50px 70px 70px;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+
+    .flex-container{
+        align-items: center;
+    }
+    .grid-item{
+        margin: 20px;
+        align-items: center;
+    }
+    a:not(:first-child){
+        padding: 0rem 2.2rem;
+
+    }
+    .fa-bars{
+        width: 50px;
+        padding-bottom: 12px;
+    }
+}

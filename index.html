@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70795afb75.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="CSS/signIn.css">
+    <title>Login</title>
+</head>
+<body>
+
+    
+    <form class="login-form">
+        <h1>Sign In</h1>
+        <div class="textb" onmouseover="PlaySound('soundUsr')" onmouseout="StopSound('soundUsr')">
+          <input type="text" required>
+          <div class="placeholder">Username</div>
+        </div>
+      
+        <div class="textb" onmouseover="PlaySound('soundPwd')" onmouseout="StopSound('soundPwd')">
+          <input type="password" required>
+          <div class="placeholder">Password</div>
+          <div class="show-password fas fa-eye-slash"></div>
+        </div>
+      
+        <div class="checkbox">
+          <input type="checkbox">
+          <div class="fas fa-check"></div>
+          Stay signed in
+        </div>
+      
+        <button class="btn fas fa-arrow-right" type="button" disabled  onmouseover="PlaySound('soundSub')" onmouseout="StopSound('soundSub')" onclick="getInfo()">    </button>
+
+        <a href="#">Can't Sign in?</a>
+        <a href="#">Create Account</a>
+    </form>
+
+
+    
+    <audio src="Audio/username_en_us_1.mp3" id="soundUsr"  preload="auto"></audio>
+    <audio src="Audio/password_en_us_1.mp3" id="soundPwd" preload="auto"></audio>
+    <audio src="Audio/submit_en_us_1.mp3" id="soundSub" preload="auto"></audio>
+    
+    <script src="JS/signIn.js"></script>
+    <script src="JS/sounds.js"></script>
+</body>
+</html>
